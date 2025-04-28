@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra a importância e os benefícios ambientais, sociais e econômicos de separar o lixo e participar da coleta seletiva.">
+    <title>Por Que Separar o Lixo? - Prefeitura de Assis Chateaubriand</title>
+
+    <!-- 1. CSS Reset (Normalize.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- === FONTE NUNITO SANS === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- === FIM === -->
+    <!-- 2. Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- 3. Seu CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+
+    <!-- === Barra Superior === -->
+    <div class="top-bar"> <div class="container"> <div class="contact-info"> <span><i class="fas fa-map-marker-alt"></i> Avenida Cívica, s/n</span> <span><i class="fas fa-phone"></i> (44) 3528-8455</span> <span><i class="fas fa-envelope"></i> contato@assischateaubriand.pr.gov.br</span> </div> </div> </div>
+    <!-- === Barra de Utilidades === -->
+    <div class="utility-bar"> <div class="container"> <div class="social-media"> <a href="https://www.instagram.com/uvr_assis/" target="_blank" aria-label="Instagram da UVR Assis"><i class="fab fa-instagram"></i></a> </div> <div class="accessibility-controls"> <button id="decrease-font" aria-label="Diminuir fonte">A-</button> <button id="increase-font" aria-label="Aumentar fonte">A+</button> <a href="#accessibility-info" aria-label="Acessibilidade"><i class="fas fa-universal-access"></i></a> </div> </div> </div>
+    <!-- === Header Principal (COM BOTÃO MOBILE) === -->
+    <header class="main-header"> <div class="container"> <div class="logo-area"> <a href="index.html" class="logo-link"> <img src="imagens/logo-prefeitura.jpg" alt="Logo oficial da Prefeitura Municipal de Assis Chateaubriand" class="logo"> </a> </div> <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"> <i class="fas fa-bars icon-open"></i><i class="fas fa-times icon-close"></i> </button> <nav class="main-nav" id="main-nav"> <ul> <li><a href="index.html" aria-label="Página Inicial"><i class="fas fa-home"></i></a></li> <li class="has-submenu"> <a href="#">Como separar<i class="fas fa-chevron-down icon-arrow"></i><button class="submenu-toggle" aria-label="Mostrar submenu Como separar" aria-expanded="false"><i class="fas fa-plus icon-plus"></i><i class="fas fa-minus icon-minus"></i></button></a> <ul class="submenu"> <li><a href="como-separarcomo-fazer.html">Como fazer a separação?</a></li> <li><a href="como-separar-residuos.html">Quais são os resíduos recicláveis?</a></li> <li><a href="como-separar-porque-separar.html">Por que separar os resíduos?</a></li> </ul> </li> <li><a href="index.html#cronograma">Cronograma</a></li> <li><a href="docs/cartilha-deco.pdf" target="_blank">Cartilha</a></li> <li><a href="acamar.html">ACAMAR</a></li> <li><a href="total-coletado.html">Total coletado</a></li> <li><a href="contato.html">Contato</a></li> </ul> </nav> </div> </header>
+
+    <!-- === Conteúdo Principal === -->
+    <main>
+        <section id="porque-separar" class="info-section">
+             <div class="container">
+                <h2>Por que separar os resíduos?</h2>
+                 <!-- ** Atualize src e alt ** -->
+                <img src="imagens/beneficios-separacao.jpg" alt="Infográfico resumindo os benefícios da reciclagem: preservação ambiental, economia de recursos, geração de renda e diminuição da poluição.">
+                <p>
+                    Separar o lixo e participar da coleta seletiva traz inúmeros benefícios para todos nós e para o planeta:
+                </p>
+                 <ul>
+                     <li><strong>Preserva o Meio Ambiente:</strong> Reduz a extração de recursos naturais (matérias-primas) e economiza água e energia usadas na produção de novos materiais.</li>
+                     <li><strong>Diminui a Poluição:</strong> Menos lixo nos aterros sanitários significa menor contaminação do solo e da água. A reciclagem também evita a poluição gerada na produção a partir do zero.</li>
+                     <li><strong>Gera Emprego e Renda:</strong> A cadeia da reciclagem movimenta a economia e gera empregos para catadores e trabalhadores de cooperativas e indústrias de reciclagem.</li>
+                     <li><strong>Aumenta a Vida Útil dos Aterros:</strong> Quanto mais reciclamos, menos lixo vai para os aterros, fazendo com que eles durem mais tempo.</li>
+                     <li><strong>Promove a Consciência Ambiental:</strong> Separar o lixo nos torna mais conscientes sobre nossos hábitos de consumo e o impacto que geramos.</li>
+                 </ul>
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/e2bnTHNV0Zw" title="Vídeo do YouTube explicando a importância da coleta seletiva e da separação do lixo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+             </div>
+        </section>
+    </main>
+
+    <!-- === Rodapé === -->
+     <footer> <div class="footer-line footer-logos"> <div class="container"> <img src="imagens/logo-prefeitura-rodape.png" alt="Logo Prefeitura de Assis Chateaubriand (Versão rodapé)"> <img src="imagens/logo-parceiro1.png" alt="Logo do Parceiro 1 da Coleta Amiga"> </div> </div> <div class="footer-line footer-ods"> <div class="container"> <img src="imagens/logo-ods.png" alt="Logo ODS 6: Água Potável e Saneamento"> <img src="imagens/logo1-ods.png" alt="Logo ODS 11: Cidades e Comunidades Sustentáveis"> <img src="imagens/logo2-ods.png" alt="Logo ODS 12: Consumo e Produção Responsáveis"> <img src="imagens/logo3-ods.png" alt="Logo ODS 15: Vida Terrestre"> </div> </div> <div class="footer-line footer-contact"> <div class="container"></div> </div> <div class="footer-quick-links"> <a href="https://www.instagram.com/uvr_assis/" target="_blank"><i class="fab fa-instagram"></i> Insta UVR</a> <a href="index.html"><i class="fas fa-home"></i> Página Inicial</a> </div> <div class="footer-copyright"> <div class="container"> <p>© <span id="current-year"></span> Prefeitura Municipal de Assis Chateaubriand. Todos os direitos reservados.</p> </div> </div> </footer>
+    <!-- === Botão Flutuante === -->
+    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta"> <i class="fab fa-instagram"></i> <span>Insta UVR</span> </a>
+    <!-- === Scripts JS === -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>

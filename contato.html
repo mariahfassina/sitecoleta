@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Prefeitura de Assis Chateaubriand ou com os responsáveis pela coleta seletiva para dúvidas, sugestões ou reclamações.">
+    <title>Contato - Prefeitura de Assis Chateaubriand</title>
+
+    <!-- 1. CSS Reset (Normalize.css) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- === FONTE NUNITO SANS === -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- === FIM === -->
+
+    <!-- 2. Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- 3. Seu CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+
+    <!-- === Barra Superior (IDÊNTICA A index.html) === -->
+    <div class="top-bar"> ... </div>
+
+    <!-- === Barra de Utilidades (IDÊNTICA A index.html) === -->
+    <div class="utility-bar"> ... </div>
+
+    <!-- === Header Principal (IDÊNTICO A index.html) === -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/logo-prefeitura.jpg" alt="Logo oficial da Prefeitura Municipal de Assis Chateaubriand" class="logo">
+                </a>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars icon-open"></i><i class="fas fa-times icon-close"></i>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" aria-label="Página Inicial"><i class="fas fa-home"></i></a></li>
+                    <li class="has-submenu">
+                        <a href="#">Como separar<i class="fas fa-chevron-down icon-arrow"></i><button class="submenu-toggle" aria-label="Mostrar submenu Como separar" aria-expanded="false"><i class="fas fa-plus icon-plus"></i><i class="fas fa-minus icon-minus"></i></button></a>
+                        <ul class="submenu">
+                            <li><a href="como-separarcomo-fazer.html">Como fazer a separação?</a></li>
+                            <li><a href="como-separar-residuos.html">Quais são os resíduos recicláveis?</a></li>
+                            <li><a href="como-separar-porque-separar.html">Por que separar os resíduos?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#cronograma">Cronograma</a></li>
+                    <li><a href="docs/cartilha-deco.pdf" target="_blank">Cartilha</a></li>
+                    <li><a href="acamar.html">ACAMAR</a></li>
+                    <li><a href="total-coletado.html">Total coletado</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === Conteúdo Principal === -->
+    <main>
+        <section id="contato-info" class="info-section">
+             <div class="container">
+                <h2>Entre em Contato</h2>
+                <p>
+                    Tem dúvidas sobre a coleta seletiva, horários, separação de materiais ou gostaria de fazer
+                    uma sugestão ou reclamação? Utilize os canais abaixo:
+                </p>
+
+                <div style="margin-top: 30px; line-height: 2;"> <!-- Div para agrupar contatos -->
+                    <h3>Secretaria de Meio Ambiente / Coleta Amiga:</h3>
+                    <p><i class="fas fa-phone fa-fw"></i> <strong>Telefone:</strong> (44) 3528-XXXX (Adicione o número correto)</p>
+                    <p><i class="fas fa-envelope fa-fw"></i> <strong>Email:</strong> meioambiente@assischateaubriand.pr.gov.br (Confirme o email)</p>
+                    <p><i class="fas fa-map-marker-alt fa-fw"></i> <strong>Endereço:</strong> (Adicione o endereço se aplicável)</p>
+                    <p><i class="fab fa-whatsapp fa-fw"></i> <strong>WhatsApp:</strong> (44) 9XXXX-XXXX (Adicione se houver)</p>
+
+                    <h3 style="margin-top: 30px;">ACAMAR (Associação de Catadores):</h3>
+                    <p><i class="fas fa-phone fa-fw"></i> <strong>Telefone:</strong> (44) XXXX-XXXX (Adicione o número correto)</p>
+                    <p><i class="fab fa-instagram fa-fw"></i> <strong>Instagram:</strong> <a href="https://www.instagram.com/uvr_assis/" target="_blank">@uvr_assis</a></p>
+                </div>
+
+                <!-- Opcional: Formulário de Contato Simples -->
+                <!--
+                <h3 style="margin-top: 40px;">Ou envie uma mensagem:</h3>
+                <form action="/enviar-contato" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+                -->
+
+             </div>
+        </section>
+    </main>
+
+    <!-- === Rodapé (IDÊNTICO A index.html) === -->
+     <footer> ... (Cole o footer completo aqui, com alt nas imagens) ... </footer>
+
+    <!-- === Botão Flutuante (IDÊNTICO A index.html) === -->
+    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta"> ... </a>
+
+    <!-- === Scripts JS (IDÊNTICO A index.html) === -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
