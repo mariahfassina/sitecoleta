@@ -3,59 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lista detalhada dos principais materiais que são considerados resíduos recicláveis e podem ser descartados na coleta seletiva.">
-    <title>Quais Resíduos são Recicláveis? - Prefeitura de Assis Chateaubriand</title>
+    <meta name="description" content="Página inicial com cronograma da coleta de resíduos e informações úteis da Prefeitura de Assis Chateaubriand.">
+    <title>Coleta Seletiva - Prefeitura de Assis Chateaubriand</title>
 
-    <!-- 1. CSS Reset (Normalize.css) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!-- === FONTE NUNITO SANS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- === FIM === -->
-    <!-- 2. Font Awesome (Ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- 3. Seu CSS principal -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
 
-    <!-- === Barra Superior === -->
-    <div class="top-bar"> <div class="container"> <div class="contact-info"> <span><i class="fas fa-map-marker-alt"></i> Avenida Cívica, s/n</span> <span><i class="fas fa-phone"></i> (44) 3528-8455</span> <span><i class="fas fa-envelope"></i> contato@assischateaubriand.pr.gov.br</span> </div>  </div> </div>
-    <!-- === Barra de Utilidades === -->
-    <div class="utility-bar"> <div class="container"> <div class="social-media"> <a href="https://www.instagram.com/uvr_assis/" target="_blank" aria-label="Instagram da UVR Assis"><i class="fab fa-instagram"></i></a> </div> <div class="accessibility-controls"> <button id="decrease-font" aria-label="Diminuir fonte">A-</button> <button id="increase-font" aria-label="Aumentar fonte">A+</button> <a href="#accessibility-info" aria-label="Acessibilidade"><i class="fas fa-universal-access"></i></a> </div> </div> </div>
-    <!-- === Header Principal (COM BOTÃO MOBILE) === -->
-    <header class="main-header"> <div class="container"> <div class="logo-area"> <a href="index.html" class="logo-link"> <img src="imagens/logo-prefeitura.jpg" alt="Logo oficial da Prefeitura Municipal de Assis Chateaubriand" class="logo"> </a> </div> <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"> <i class="fas fa-bars icon-open"></i><i class="fas fa-times icon-close"></i> </button> <nav class="main-nav" id="main-nav"> <ul> <li><a href="index.html" aria-label="Página Inicial"><i class="fas fa-home"></i></a></li> <li class="has-submenu"> <a href="#">Como separar<i class="fas fa-chevron-down icon-arrow"></i><button class="submenu-toggle" aria-label="Mostrar submenu Como separar" aria-expanded="false"><i class="fas fa-plus icon-plus"></i><i class="fas fa-minus icon-minus"></i></button></a> <ul class="submenu"> <li><a href="como-separarcomo-fazer.html">Como fazer a separação?</a></li> <li><a href="como-separar-residuos.html">Quais são os resíduos recicláveis?</a></li> <li><a href="como-separar-porque-separar.html">Por que separar os resíduos?</a></li> </ul> </li> <li><a href="index.html#cronograma">Cronograma</a></li> <li><a href="docs/cartilha-deco.pdf" target="_blank">Cartilha</a></li> <li><a href="acamar.html">ACAMAR</a></li> <li><a href="total-coletado.html">Total coletado</a></li> <li><a href="contato.html">Contato</a></li> </ul> </nav> </div> </header>
+   
 
+    <!-- === Barra de Utilidades === -->
+    <div class="utility-bar">
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.instagram.com/uvr_assis/" target="_blank" aria-label="Instagram da UVR Assis"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="accessibility-controls">
+                <button id="decrease-font" aria-label="Diminuir fonte">A-</button>
+                <button id="increase-font" aria-label="Aumentar fonte">A+</button>
+                <a href="#accessibility-info" aria-label="Acessibilidade"><i class="fas fa-universal-access"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- === Header Principal (COM BOTÃO MOBILE) === -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <a href="index.html" class="logo-link">
+                    <img src="imagens/logo-prefeitura.jpg" alt="Logo oficial da Prefeitura Municipal de Assis Chateaubriand" class="logo">
+                </a>
+            </div>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <i class="fas fa-bars icon-open"></i><i class="fas fa-times icon-close"></i>
+            </button>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" aria-label="Página Inicial"><i class="fas fa-home"></i></a></li>
+                    <li class="has-submenu">
+                        <a href="#">Como separar<i class="fas fa-chevron-down icon-arrow"></i><button class="submenu-toggle" aria-label="Mostrar submenu Como separar" aria-expanded="false"><i class="fas fa-plus icon-plus"></i><i class="fas fa-minus icon-minus"></i></button></a>
+                        <ul class="submenu">
+                            <li><a href="como-separarcomo-fazer.html">Como fazer a separação?</a></li>
+                            <li><a href="como-separar-residuos.html">Quais são os resíduos recicláveis?</a></li>
+                            <li><a href="como-separar-porque-separar.html">Por que separar os resíduos?</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#cronograma">Cronograma</a></li>
+                    <li><a href="docs/cartilha-deco.pdf" target="_blank">Cartilha</a></li>
+                    <li><a href="acamar.html">Quem somos</a></li> <!-- Texto corrigido -->
+                    <li><a href="total-coletado.html">Total coletado</a></li>
+                    <li class="menu-contato-destaque"> <!-- <<< CLASSE ADICIONADA -->
+                        <a href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- === Conteúdo Principal === -->
     <main>
         <section id="quais-residuos" class="info-section">
-             <div class="container">
-                <h2>Quais são os resíduos recicláveis?</h2>
-                 <!-- ** Atualize src e alt ** -->
-                <img src="imagens/residuos-reciclaveis.jpg" alt="Ilustração com símbolos dos materiais recicláveis: papel, vários tipos de plástico, vidro e metal.">
-                <p>
-                    Muitos materiais do nosso dia a dia podem ser reciclados! Confira os principais grupos:
-                </p>
-                <ul>
-                    <li><strong>Papéis:</strong> Jornais, revistas, caixas de papelão, embalagens de papel, envelopes, cartolinas. (Evite papel carbono, fitas adesivas, fotografias, papéis sujos ou engordurados).</li>
-                    <li><strong>Plásticos:</strong> Garrafas PET (refrigerante, água), embalagens de produtos de limpeza e higiene, potes de alimentos, sacolas plásticas, tampinhas, brinquedos de plástico.</li>
-                    <li><strong>Vidros:</strong> Garrafas de bebidas, potes de conserva, frascos de perfume ou remédios. (Evite espelhos, vidros de janela, lâmpadas, cristal).</li>
-                    <li><strong>Metais:</strong> Latas de alumínio (refrigerante, cerveja), latas de aço (óleo, sardinha, molho), tampinhas de metal, arames, pregos, panelas velhas (sem cabo).</li>
-                    <li><strong>Embalagens Longa Vida (Tetra Pak):</strong> Caixas de leite, sucos e molhos.</li>
-                </ul>
-                <p>
-                    Na dúvida, verifique se a embalagem possui o símbolo da reciclagem. Consulte também os materiais específicos aceitos pela coleta da sua cidade.
-                </p>
-             </div>
+            <div class="container">
+               <h2><i class="fas fa-recycle" style="margin-right: 8px;"></i>Quais são os resíduos recicláveis?</h2>
+
+                <!-- ** Atualize src e alt ** -->
+              
+
+                <li><strong>Papéis:</strong> papelão, embalagens cartonadas, caixas de ovos, cadernos usados, caixas de
+                    leite longa vida, jornais, revistas, entre outros.</li>
+                <li><strong>Plásticos:</strong> garrafa pet, embalagens de detergente, amaciante, óleo de cozinha,
+                    álcool, tampas de plástico, pacotes em gerais, frascos de xampu, potinhos de iogurte, sacolas de
+                    supermercados, copos descartáveis, balde, PVC, entre outros.</li>
+                <li><strong>Vidros:</strong> garrafas de bebida, potes de conserva, frascos de perfume, potes de geleia,
+                    entre outros.</li>
+                <li><strong>Metais:</strong> latinhas de cerveja e refrigerante, latas de doces, leite em pó, azeite,
+                    latinhas de sardinha, arames, embalagens metálicas, latinhas de milho e ervilha, entre outros.</li>
+            </div>
         </section>
     </main>
 
-    <!-- === Rodapé === -->
-     <footer> <div class="footer-line footer-logos"> <div class="container"> <img src="imagens/logo-prefeitura-rodape.png" alt="Logo Prefeitura de Assis Chateaubriand (Versão rodapé)"> <img src="imagens/logo-parceiro1.png" alt="Logo do Parceiro 1 da Coleta Amiga"> </div> </div> <div class="footer-line footer-ods"> <div class="container"> <img src="imagens/logo-ods.png" alt="Logo ODS 6: Água Potável e Saneamento"> <img src="imagens/logo1-ods.png" alt="Logo ODS 11: Cidades e Comunidades Sustentáveis"> <img src="imagens/logo2-ods.png" alt="Logo ODS 12: Consumo e Produção Responsáveis"> <img src="imagens/logo3-ods.png" alt="Logo ODS 15: Vida Terrestre"> </div> </div> <div class="footer-line footer-contact"> <div class="container"></div> </div> <div class="footer-quick-links"> <a href="https://www.instagram.com/uvr_assis/" target="_blank"><i class="fab fa-instagram"></i> Insta UVR</a> <a href="index.html"><i class="fas fa-home"></i> Página Inicial</a> </div> <div class="footer-copyright"> <div class="container"> <p>© <span id="current-year"></span> Prefeitura Municipal de Assis Chateaubriand. Todos os direitos reservados.</p> </div> </div> </footer>
+    <footer>
+        <div class="footer-line footer-logos">
+            <div class="container">
+                <!-- Nova Ordem dos Logos -->
+                <img src="imagens/logo-itaipu.png" alt="Logo Itaipu Binacional" class="logo-parceiro">
+                <img src="imagens/logo-inpar.png" alt="Logo InPAR" class="logo-parceiro">
+                <img src="imagens/logo-coleta-amiga.png" alt="Logo Programa Coleta Amiga" class="logo-principal-parceiro">
+                <img src="imagens/logo-acamar.png" alt="Logo ACAMAR" class="logo-parceiro">
+                <img src="imagens/logo-educacao-ambiental.png" alt="Logo Departamento de Educação Ambiental e Convênios" class="logo-principal-parceiro">
+               <img src="imagens/logo-secretaria.png" alt="Logo Secretaria Municipal" class="logo-principal-parceiro">
+                <img src="imagens/logo-prefeitura-rodape.png" alt="Logo Município de Assis Chateaubriand" class="logo-principal-parceiro">
+            </div>
+        </div>
+        <div class="footer-line footer-ods">
+            <div class="container">
+                <img src="imagens/logo-ods6.png" alt="Logo ODS 6: Água Potável e Saneamento">
+                <img src="imagens/logo-ods8.png" alt="Logo ODS 8: Trabalho Decente e Crescimento Econômico">
+                <img src="imagens/logo-ods10.png" alt="Logo ODS 10: Redução das Desigualdades">
+                <img src="imagens/logo-ods11.png" alt="Logo ODS 11: Cidades e Comunidades Sustentáveis">
+                <img src="imagens/logo-ods12.png" alt="Logo ODS 12: Consumo e Produção Responsáveis">
+            </div>
+        </div>
+        <div class="footer-line footer-contact">
+            <div class="container"></div>
+        </div>
+        <div class="footer-quick-links">
+            <a href="https://www.instagram.com/uvr_assis/" target="_blank"><i class="fab fa-instagram"></i> Insta UVR</a>
+            <a href="index.html"><i class="fas fa-home"></i> Página Inicial</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>© <span id="current-year"></span> Prefeitura Municipal de Assis Chateaubriand. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
     <!-- === Botão Flutuante === -->
-    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta"> <i class="fab fa-instagram"></i> <span>Insta UVR</span> </a>
+    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta">
+        <i class="fab fa-instagram"></i> <span>Insta UVR</span>
+    </a>
+
     <!-- === Scripts JS === -->
     <script src="js/main.js"></script>
 

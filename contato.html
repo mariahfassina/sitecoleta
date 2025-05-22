@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Entre em contato com a Prefeitura de Assis Chateaubriand ou com os responsáveis pela coleta seletiva para dúvidas, sugestões ou reclamações.">
-    <title>Contato - Prefeitura de Assis Chateaubriand</title>
+    <meta name="description" content="Página inicial com cronograma da coleta de resíduos e informações úteis da Prefeitura de Assis Chateaubriand.">
+    <title>Coleta Seletiva - Prefeitura de Assis Chateaubriand</title>
 
-    <!-- 1. CSS Reset (Normalize.css) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- === FONTE NUNITO SANS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <!-- === FIM === -->
-
-    <!-- 2. Font Awesome (Ícones) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- 3. Seu CSS principal -->
     <link rel="stylesheet" href="css/style.css">
-
     <!-- <link rel="icon" href="imagens/favicon.ico" type="image/x-icon"> -->
 </head>
 <body>
 
-    <!-- === Barra Superior (IDÊNTICA A index.html) === -->
-    <div class="top-bar"> ... </div>
+   
 
-    <!-- === Barra de Utilidades (IDÊNTICA A index.html) === -->
-    <div class="utility-bar"> ... </div>
+    <!-- === Barra de Utilidades === -->
+    <div class="utility-bar">
+        <div class="container">
+            <div class="social-media">
+                <a href="https://www.instagram.com/uvr_assis/" target="_blank" aria-label="Instagram da UVR Assis"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="accessibility-controls">
+                <button id="decrease-font" aria-label="Diminuir fonte">A-</button>
+                <button id="increase-font" aria-label="Aumentar fonte">A+</button>
+                <a href="#accessibility-info" aria-label="Acessibilidade"><i class="fas fa-universal-access"></i></a>
+            </div>
+        </div>
+    </div>
 
-    <!-- === Header Principal (IDÊNTICO A index.html) === -->
+    <!-- === Header Principal (COM BOTÃO MOBILE) === -->
     <header class="main-header">
         <div class="container">
             <div class="logo-area">
@@ -55,9 +56,11 @@
                     </li>
                     <li><a href="index.html#cronograma">Cronograma</a></li>
                     <li><a href="docs/cartilha-deco.pdf" target="_blank">Cartilha</a></li>
-                    <li><a href="acamar.html">ACAMAR</a></li>
+                    <li><a href="acamar.html">Quem somos</a></li> <!-- Texto corrigido -->
                     <li><a href="total-coletado.html">Total coletado</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li class="menu-contato-destaque"> <!-- <<< CLASSE ADICIONADA -->
+                        <a href="contato.html">Contato</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -113,13 +116,48 @@
         </section>
     </main>
 
-    <!-- === Rodapé (IDÊNTICO A index.html) === -->
-     <footer> ... (Cole o footer completo aqui, com alt nas imagens) ... </footer>
+ <footer>
+        <div class="footer-line footer-logos">
+            <div class="container">
+                <!-- Nova Ordem dos Logos -->
+                <img src="imagens/logo-itaipu.png" alt="Logo Itaipu Binacional" class="logo-parceiro">
+                <img src="imagens/logo-inpar.png" alt="Logo InPAR" class="logo-parceiro">
+                <img src="imagens/logo-coleta-amiga.png" alt="Logo Programa Coleta Amiga" class="logo-principal-parceiro">
+                <img src="imagens/logo-acamar.png" alt="Logo ACAMAR" class="logo-parceiro">
+                <img src="imagens/logo-educacao-ambiental.png" alt="Logo Departamento de Educação Ambiental e Convênios" class="logo-principal-parceiro">
+               <img src="imagens/logo-secretaria.png" alt="Logo Secretaria Municipal" class="logo-principal-parceiro">
+                <img src="imagens/logo-prefeitura-rodape.png" alt="Logo Município de Assis Chateaubriand" class="logo-principal-parceiro">
+            </div>
+        </div>
+        <div class="footer-line footer-ods">
+            <div class="container">
+                <img src="imagens/logo-ods6.png" alt="Logo ODS 6: Água Potável e Saneamento">
+                <img src="imagens/logo-ods8.png" alt="Logo ODS 8: Trabalho Decente e Crescimento Econômico">
+                <img src="imagens/logo-ods10.png" alt="Logo ODS 10: Redução das Desigualdades">
+                <img src="imagens/logo-ods11.png" alt="Logo ODS 11: Cidades e Comunidades Sustentáveis">
+                <img src="imagens/logo-ods12.png" alt="Logo ODS 12: Consumo e Produção Responsáveis">
+            </div>
+        </div>
+        <div class="footer-line footer-contact">
+            <div class="container"></div>
+        </div>
+        <div class="footer-quick-links">
+            <a href="https://www.instagram.com/uvr_assis/" target="_blank"><i class="fab fa-instagram"></i> Insta UVR</a>
+            <a href="index.html"><i class="fas fa-home"></i> Página Inicial</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p>© <span id="current-year"></span> Prefeitura Municipal de Assis Chateaubriand. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
-    <!-- === Botão Flutuante (IDÊNTICO A index.html) === -->
-    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta"> ... </a>
+    <!-- === Botão Flutuante === -->
+    <a href="https://www.instagram.com/uvr_assis/" target="_blank" class="sticky-insta">
+        <i class="fab fa-instagram"></i> <span>Insta UVR</span>
+    </a>
 
-    <!-- === Scripts JS (IDÊNTICO A index.html) === -->
+    <!-- === Scripts JS === -->
     <script src="js/main.js"></script>
 
 </body>
